@@ -10,16 +10,16 @@ public class CafeteraServicio {
 
     public Cafetera llenarCafetera() {
 
-        Cafetera cafetera = new Cafetera();
+        Cafetera ca = new Cafetera();
         System.out.println("Ingrese la cantidad de litros de la cafetera: ");
         double litros = tecladoScanner.nextDouble();
-        cafetera.setCantidadActual(litros);
-        cafetera.setCapacidadMaxima(litros);
-        return cafetera;
+        ca.setCantidadActual(litros);
+        ca.setCapacidadMaxima(litros);
+        return ca;
 
     }
 
-    public void servirTaza(Cafetera cafetera) {
+    public  void servirTaza(Cafetera cafetera) {
 
         System.out.println("Ingrese el tamaño de la taza en mililitros: ");
         double tamanioTaza = tecladoScanner.nextDouble() / 1000;
